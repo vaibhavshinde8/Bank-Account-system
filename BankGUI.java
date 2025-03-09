@@ -54,7 +54,7 @@ class Account implements Serializable {
             writer.write("Email: " + email + "\n");
             writer.write("Phone: " + phone + "\n");
             writer.write("Balance: " + balance + "\n");
-            
+
             writer.write("Records:\n");
             for (String record : records) {
                 writer.write("- " + record + "\n");
@@ -63,6 +63,8 @@ class Account implements Serializable {
         } catch (IOException e) {
             JOptionPane.showMessageDialog(null, "Error saving records.", "Error", JOptionPane.ERROR_MESSAGE);
         }
+
+        
     }
 
     private void addRecord(String record) {
