@@ -27,11 +27,14 @@ class Account implements Serializable {
     }
 
 
-    
+
     public void addMoney(double amount) {
         balance += amount;
         addRecord("Added: " + amount);
     }
+
+
+    
 
     public void takeMoney(double amount) {
         if (amount > balance) {
