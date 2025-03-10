@@ -34,10 +34,11 @@ class Account implements Serializable {
     }
 
 
-    
+
 
     public void takeMoney(double amount) {
         if (amount > balance) {
+            
             JOptionPane.showMessageDialog(null, "Not enough balance.", "Error", JOptionPane.ERROR_MESSAGE);
         } else {
             balance -= amount;
