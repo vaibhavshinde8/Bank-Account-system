@@ -38,7 +38,7 @@ class Account implements Serializable {
 
     public void takeMoney(double amount) {
         if (amount > balance) {
-            
+
             JOptionPane.showMessageDialog(null, "Not enough balance.", "Error", JOptionPane.ERROR_MESSAGE);
         } else {
             balance -= amount;
@@ -54,6 +54,7 @@ class Account implements Serializable {
             writer.write("Email: " + email + "\n");
             writer.write("Phone: " + phone + "\n");
             writer.write("Balance: " + balance + "\n");
+            
             writer.write("Records:\n");
             for (String record : records) {
                 writer.write("- " + record + "\n");
