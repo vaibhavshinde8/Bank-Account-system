@@ -9,7 +9,7 @@ class Account implements Serializable {
     String accNo;
 
 
-    
+
     String name;
     String email;
     String phone;
@@ -26,6 +26,8 @@ class Account implements Serializable {
         addRecord("Account created with balance: 0.0");
     }
 
+
+    
     public void addMoney(double amount) {
         balance += amount;
         addRecord("Added: " + amount);
