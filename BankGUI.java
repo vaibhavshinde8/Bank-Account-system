@@ -59,12 +59,14 @@ class Account implements Serializable {
             for (String record : records) {
                 writer.write("- " + record + "\n");
             }
+
+            
             JOptionPane.showMessageDialog(null, "Records saved to: " + fileName, "Success", JOptionPane.INFORMATION_MESSAGE);
         } catch (IOException e) {
             JOptionPane.showMessageDialog(null, "Error saving records.", "Error", JOptionPane.ERROR_MESSAGE);
         }
 
-        
+
     }
 
     private void addRecord(String record) {
