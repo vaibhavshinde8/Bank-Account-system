@@ -7,6 +7,8 @@ import java.util.*;
 class Account implements Serializable {
     static int accCount = 36;
     String accNo;
+
+    
     String name;
     String email;
     String phone;
